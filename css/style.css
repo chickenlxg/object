@@ -108,6 +108,14 @@
 	color: rgba(102,102,102,1);
 	position: absolute;
 }
+ .content .inputtext{
+    float: right;
+    width: 2.93rem;
+    height: 0.7rem;
+    margin-top: 0.2rem;
+    text-align: right;
+    border: 0;
+}
  .content select{
     float: right;
     width: 3rem;
@@ -115,10 +123,12 @@
     margin-top: 0.2rem;
 }
  .content .vcode{
-	height: 100%;
-	width: 2.2222222222222223rem;
-	background: rgba(220,220,220,1);
-	float: right;
+    height: 98%;
+    width: 2.2222222222222223rem;
+    background: rgba(220,220,220,1);
+    float: right;
+    border: 0;
+    text-align: right;
 }
  .button{
 	width: 90%;
