@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no,uc-fitscreen=yes">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/index.js" ></script>
+</head>
+<body class="user_back">
+    <div class="top">
+    	<div class="but_lef"><img src="img/left.png" /></div>
+        <div class="page_name">个人中心</div>
+    </div>
+    <div class="user_head">
+        <div class="portrait"></div>
+        <span class="username">姓名</span>
+        <span class="department">产品部门</span>
+        <div class="userstat">
+        	<img src="img/good.png" />
+            <span>正常状态</span>
+        </div>
+    </div>
+    <div class="user_head">
+    	<div class="paymoney_left">
+            <div class="pay_word">到卡金额</div>
+            <div class="pay_money">500</div>
+        </div>
+        <div class="paymoney_right">
+            <div class="pay_word">未到卡金额</div>
+            <div class="pay_money">100</div>
+        </div>
+    </div>
+    <div class="content_news">
+    	<div class="news_img"><img src="img/news.png" /></div>
+        <span>站内消息站内消息站内消息站内消息</span>
+    </div>
+    <div class="content_gray"></div>
+    <div class="table">
+        <div class="square">
+          <ul class="square-inner float">
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/wenzhang.png"/>
+                    <div>个人资料</div>
+                </div>
+                </a>
+            </li>
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/qingjia.png"/>
+                    <div>个人充值</div>
+                </div>
+                </a>
+            </li>
+            <li>
+            	<a onclick="showDiv()" style="display:block; cursor:pointer">
+                    <img src="img/jiesuo.png"/>
+                    <div>挂失解锁</div>
+                </a>
+            </li>
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/xiugaixiang.png"/>
+                    <div>个人订餐</div>
+                </div>
+                </a>
+            </li>
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/woyaozuode.png"/>
+                    <div>订餐记录</div>
+                </div>
+                </a>
+            </li>
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/renwudongtai.png"/>
+                    <div>交易明细</div>
+                </div>
+                </a>
+            </li>
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/xiugaixiang.png"/>
+                    <div>修改密码</div>
+                </div>
+                </a>
+            </li>
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/lixianshebei.png"/>
+                    <div>解除绑定</div>
+                </div>
+                </a>
+            </li>
+            <li>
+            	<a href="#" >
+            	<div>
+                    <img src="img/zhanghu.png"/>
+                    <div>关于我们</div>
+                </div>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="bottom">
+    	<span class="bottomtext">- 所属机构 -</span>
+    </div>
+    <div id="popWindow" class="popWindow" style="display: none;">  
+    </div>  
+    <div id="maskLayer" class="maskLayer" style="display: none;">  
+    	<span>我要挂失该卡</span>
+        <div>
+        	<span>挂失后该卡不能正常使用！</span>
+            <div class="yesno">
+                  <a href="#" onclick="closeDiv()"  style="cursor:pointer;text-decoration: none;"><div class="yes">是</div></a>
+                  <a href="#" onclick="closeDiv()"  style="cursor:pointer;text-decoration: none;"><div class="no">否 </div></a>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
