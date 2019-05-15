@@ -110,11 +110,25 @@
 }
  .content .inputtext{
     float: right;
-    width: 2.93rem;
+    width: 4.2rem;
     height: 0.7rem;
     margin-top: 0.2rem;
     text-align: right;
     border: 0;
+    font-size: 0.3333333333333333rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+}
+ .content .numtext{
+    float: right;
+    width: 3.5rem;
+    height: 0.7rem;
+    margin-top: 0.2rem;
+    text-align: right;
+    border: 0;
+    font-size: 0.3333333333333333rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
 }
  .content select{
     float: right;
@@ -128,7 +142,10 @@
     background: rgba(220,220,220,1);
     float: right;
     border: 0;
-    text-align: right;
+    text-align: center;
+    font-size: 0.3333333333333333rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
 }
  .button{
 	width: 90%;
