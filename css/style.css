@@ -111,7 +111,18 @@
  .content .inputtext{
     float: right;
     width: 5.85rem;
-    height: 1.1rem;
+    height: 1.17rem;
+    text-align: left;
+    border: 0;
+    font-size: 0.3333333333333333rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+}
+ .content .vcodetext{
+ 	position: absolute;
+    margin-left: 0.89rem;
+    width: 3.5rem;
+    height: 1.17rem;
     text-align: left;
     border: 0;
     font-size: 0.3333333333333333rem;
@@ -125,7 +136,7 @@
     margin-top: 0.2rem;
 }
  .content .vcode{
-    height: 98%;
+    height: 99%;
     width: 2.2222222222222223rem;
     background: rgba(220,220,220,1);
     float: right;
