@@ -189,6 +189,8 @@
 	background: rgba(9,187,7,1);
 	box-shadow: 0rem 0.08888888888888889rem 0.17777777777777778rem 0rem rgba(9,187,7,0.24);
 	border-radius: 0.4888888888888889rem;
+	border: 0;
+	display: block;
 }
  .button_pay div{
     margin-left: 2.2rem;

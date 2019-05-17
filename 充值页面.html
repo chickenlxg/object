@@ -5,7 +5,11 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no,uc-fitscreen=yes">
     <title>充值页面</title>
     <link rel="stylesheet" href="css/style.css">
+	 <script type="text/javascript" src="js/jquery.min.js" ></script>
     <script type="text/javascript" src="js/index.js" ></script>
+	<style>
+	 .changeImage{background:url('img/pic.png') no-repeat bottom right;border:0.035rem solid #22AAFE;color:#22AAFE;background-size: 0.7444444444444445rem 0.7555555555555555rem;    border-radius: 0.15rem;background-color: #fff;margin: -0.035rem; }
+	</style>
 </head>
 <body>
     <div class="top">
@@ -21,33 +25,137 @@
         <div class="headline">充值金额</div>
     </div>
     <div class="content_pay">
-        <table cellspacing="15px"  cellpadding="0" >
+          <table cellspacing="15px"  cellpadding="0" >
           <tr>
-            <td class="pick"><div >50元</div></td>
-            <td class="gray">100元</td>
+            <td class="gray"><div id="m-my-ws" onclick="addimg(50)">50元</div></td>
+            <td class="gray"><div id="m-my-yb" onclick="addimg(100)">100元</div></td>
           </tr>
           <tr>
-            <td class="gray">200元</td>
-            <td class="gray">300元</td>
+            <td class="gray"><div id="m-my-ebai" onclick="addimg(200)">200元</div></td>
+            <td class="gray"><div id="m-my-sbai" onclick="addimg(300)">300元</div></td>
           </tr>
           <tr>
-            <td class="gray">400元</td>
-            <td class="gray">500元</td>
+            <td class="gray"><div id="m-my-sibai" onclick="addimg(400)">400元</div></td>
+            <td class="gray"><div id="m-my-wbai" onclick="addimg(500)">500元</div></td>
           </tr>
           <tr>
-            <td class="gray">600元</td>
-            <td class="gray">700元</td>
+            <td class="gray"><div id="m-my-lbai" onclick="addimg(600)">600元</div></td>
+            <td class="gray"><div id="m-my-bbai" onclick="addimg(800)">800元</div></td>
           </tr>
         </table>
+		 <input class='' type='hidden' placeholder="充值金额" id="czje" name="czje" />
     </div>
-    <div class="button_pay">
+    <button class="button_pay">
     	<div>
             <img src="img/weixinzhifu.png" />
             <div>立即充值</div>
         </div>
-    </div>
+    </button>
     <div class="bottom">
         <span class="bottomtext">- 所属机构 -</span>
     </div>
 </body>
 </html>
+<script type="text/javascript">
+    //var myYY = $('#m-my-yy');
+    var myWS = $('#m-my-ws');
+    var myYB = $('#m-my-yb');
+    var myEBAI = $('#m-my-ebai');
+    var mySBAI = $('#m-my-sbai');
+    var mySIBAI = $('#m-my-sibai');
+    var myWBAI = $('#m-my-wbai');
+    var myLBAI = $('#m-my-lbai');
+    var myBBAI = $('#m-my-bbai');
+
+    function addimg(obj){
+        if(obj == 50){
+			myWS.addClass('changeImage');
+            myYB.removeClass('changeImage');
+            myEBAI.removeClass('changeImage'); 
+            mySBAI.removeClass('changeImage');
+            mySIBAI.removeClass('changeImage');
+            myWBAI.removeClass('changeImage'); 
+            myLBAI.removeClass('changeImage');
+            myBBAI.removeClass('changeImage');
+        }
+        if(obj == 100){
+            myYB.addClass('changeImage');
+            myWS.removeClass('changeImage');
+            myEBAI.removeClass('changeImage'); 
+            mySBAI.removeClass('changeImage');
+            mySIBAI.removeClass('changeImage');
+            myWBAI.removeClass('changeImage'); 
+            myLBAI.removeClass('changeImage');
+            myBBAI.removeClass('changeImage');
+
+        }
+        if(obj == 200){
+            myYB.removeClass('changeImage');
+            myWS.removeClass('changeImage');
+            myEBAI.addClass('changeImage'); 
+            mySBAI.removeClass('changeImage');
+            mySIBAI.removeClass('changeImage');
+            myWBAI.removeClass('changeImage'); 
+            myLBAI.removeClass('changeImage');
+            myBBAI.removeClass('changeImage');
+
+        }
+        if(obj == 300){
+            myYB.removeClass('changeImage');
+            myWS.removeClass('changeImage');
+            myEBAI.removeClass('changeImage'); 
+            mySBAI.addClass('changeImage');
+            mySIBAI.removeClass('changeImage');
+            myWBAI.removeClass('changeImage'); 
+            myLBAI.removeClass('changeImage');
+            myBBAI.removeClass('changeImage');
+
+        }
+        if(obj == 400){
+            myYB.removeClass('changeImage');
+            myWS.removeClass('changeImage');
+            myEBAI.removeClass('changeImage'); 
+            mySBAI.removeClass('changeImage');
+            mySIBAI.addClass('changeImage');
+            myWBAI.removeClass('changeImage'); 
+            myLBAI.removeClass('changeImage');
+            myBBAI.removeClass('changeImage');
+
+        }
+        if(obj == 500){
+            myYB.removeClass('changeImage');
+            myWS.removeClass('changeImage');
+            myEBAI.removeClass('changeImage'); 
+            mySBAI.removeClass('changeImage');
+            mySIBAI.removeClass('changeImage');
+            myWBAI.addClass('changeImage'); 
+            myLBAI.removeClass('changeImage');
+            myBBAI.removeClass('changeImage');
+
+        }
+        if(obj == 600){
+            myYB.removeClass('changeImage');
+            myWS.removeClass('changeImage');
+            myEBAI.removeClass('changeImage'); 
+            mySBAI.removeClass('changeImage');
+            mySIBAI.removeClass('changeImage');
+            myWBAI.removeClass('changeImage'); 
+            myLBAI.addClass('changeImage');
+            myBBAI.removeClass('changeImage');
+
+        }
+        if(obj == 800){
+            myYB.removeClass('changeImage');
+            myWS.removeClass('changeImage');
+            myEBAI.removeClass('changeImage'); 
+            mySBAI.removeClass('changeImage');
+            mySIBAI.removeClass('changeImage');
+            myWBAI.removeClass('changeImage'); 
+            myLBAI.removeClass('changeImage');
+            myBBAI.addClass('changeImage');
+
+        }
+		document.getElementById("czje").value=obj;
+	}
+       // 
+    </script>
